@@ -1,6 +1,7 @@
 package Practice;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -89,6 +90,8 @@ public class DemoWebLoginToOrder {
         Thread.sleep(1000);
         driver.findElement(By.xpath("//input[@value='Delete']")).click();
         Thread.sleep(1000);
+
+
         driver.switchTo().alert().accept();
         Thread.sleep(1000);
     }
