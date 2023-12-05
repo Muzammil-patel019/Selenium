@@ -3,8 +3,19 @@
     <option name="myName" value="Project Default" />
     <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <Languages>
-        <language minSize="110" name="Java" />
+        <language minSize="145" name="Java" />
       </Languages>
+    </inspection_tool>
+    <inspection_tool class="groupsTestNG" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="groups">
+        <value>
+          <list size="3">
+            <item index="0" class="java.lang.String" itemvalue="smoke" />
+            <item index="1" class="java.lang.String" itemvalue="" />
+            <item index="2" class="java.lang.String" itemvalue="system" />
+          </list>
+        </value>
+      </option>
     </inspection_tool>
   </profile>
 </component>
