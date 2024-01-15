@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="TC_01_DWS.java">
+        <parameter name="browserName" value="chrome">
+        </parameter>
+        <classes>
+            <class name="ProjectDemoWeb.TC_01_DWS">
+                <methods>
+                    <include name="ToCheckBookPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="TC_02_DWS.java">
+        <parameter name="browserName" value="edge">
+        </parameter>
+        <classes>
+            <class name="ProjectDemoWeb.TC_02_DWS">
+                <methods>
+                    <include name="ToCheckComputerPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="TC_03_DWS.java">
+        <parameter name="browserName" value="edge">
+        </parameter>
+        <classes>
+            <class name="ProjectDemoWeb.TC_03_DWS">
+                <methods>
+                    <include name="ToAddHatToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="TC_04_DWS.java">
+        <parameter name="browserName" value="chrome">
+        </parameter>
+        <classes>
+            <class name="ProjectDemoWeb.TC_04_DWS">
+                <methods>
+                    <include name="ToClickOnGiftCard"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="TC_05_DWS.java">
+        <parameter name="browserName" value="edge">
+        </parameter>
+        <classes>
+            <class name="ProjectDemoWeb.TC_05_DWS">
+                <methods>
+                    <include name="ToSearchCamera"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="TC_06_DWS.java">
+        <parameter name="browserName" value="chrome">
+        </parameter>
+        <classes>
+            <class name="ProjectDemoWeb.TC_06_DWS">
+                <methods>
+                    <include name="ToCheckJewelary"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="TC_07_DWS.java">
+        <parameter name="browserName" value="edge">
+        </parameter>
+        <classes>
+            <class name="ProjectDemoWeb.TC_07_DWS">
+                <methods>
+                    <include name="ToPerformCheckout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="TC_08_DWS.java">
+        <parameter name="browserName" value="edge">
+        </parameter>
+        <classes>
+            <class name="ProjectDemoWeb.TC_08_DWS">
+                <methods>
+                    <include name="ToMailGiftCard"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="TC_09_DWS.java">
+        <parameter name="browserName" value="chrome">
+        </parameter>
+        <classes>
+            <class name="ProjectDemoWeb.TC_09_DWS">
+                <methods>
+                    <include name="AddingProductToCompareList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="TC_10_DWS.java">
+        <parameter name="browserName" value="edge">
+        </parameter>
+        <classes>
+            <class name="ProjectDemoWeb.TC_10_DWS">
+                <methods>
+                    <include name="AddingProductToWishList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

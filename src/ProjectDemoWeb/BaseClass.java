@@ -3,20 +3,30 @@ package ProjectDemoWeb;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
 public class BaseClass {
     WebDriver driver;
+    @Parameters("browserName")
+
     @BeforeClass
-    public void ToLunchBrowser()
+    public void ToLunchBrowser(String bName)
     {
-        driver=new ChromeDriver();
+        if (bName.equalsIgnoreCase("chrome")) {
+            driver = new ChromeDriver();
+        } else if (bName.equalsIgnoreCase("edge")) {
+            driver=new EdgeDriver();
+
+
+        }
+        Reporter.log("Browser got Open",true);
+        driver.manage().window().maximize();
+        Reporter.log("Window got Maximize",true);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         Reporter.log("Browser got Open",true);
         driver.manage().window().maximize();
         Reporter.log("Window got Maximize",true);
